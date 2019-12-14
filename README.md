@@ -1,5 +1,6 @@
 # My first python code
 [![Build Status](https://travis-ci.org/agavazov/python-postcodes.svg?branch=master)](https://travis-ci.org/agavazov/python-postcodes)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Requirements
 - Get longitude and latitude for a list of postcodes in UK from http://postcodes.io/
