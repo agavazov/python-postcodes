@@ -1,0 +1,1415 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.724652,
+          52.002562
+        ]
+      },
+      "properties": {
+        "name": "Bletchley",
+        "postcode": "MK1 1BN",
+        "position": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.991638,
+          51.989192
+        ]
+      },
+      "properties": {
+        "name": "Buckingham",
+        "postcode": "MK18 1TB",
+        "position": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.514047,
+          51.890604
+        ]
+      },
+      "properties": {
+        "name": "Dunstable",
+        "postcode": "LU5 4XZ",
+        "position": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3982,
+          51.873519
+        ]
+      },
+      "properties": {
+        "name": "Luton",
+        "postcode": "LU1 3JH",
+        "position": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.805149,
+          51.818086
+        ]
+      },
+      "properties": {
+        "name": "Aylesbury",
+        "postcode": "HP20 1DH",
+        "position": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.069212,
+          51.797063
+        ]
+      },
+      "properties": {
+        "name": "Hertford",
+        "postcode": "SG13 7RQ",
+        "position": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.121821,
+          51.785111
+        ]
+      },
+      "properties": {
+        "name": "Harlow",
+        "postcode": "CM20 2SX",
+        "position": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.222034,
+          51.776142
+        ]
+      },
+      "properties": {
+        "name": "Hatfield",
+        "postcode": "AL9 5JP",
+        "position": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.341337,
+          51.741753
+        ]
+      },
+      "properties": {
+        "name": "St_Albans",
+        "postcode": "AL1 2RJ",
+        "position": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.474067,
+          51.739299
+        ]
+      },
+      "properties": {
+        "name": "Hemel_Hempstead",
+        "postcode": "HP3 9AA",
+        "position": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.495698,
+          51.732632
+        ]
+      },
+      "properties": {
+        "name": "Chelmsford",
+        "postcode": "CM2 6XE",
+        "position": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.009966,
+          51.68602
+        ]
+      },
+      "properties": {
+        "name": "Waltham_Abbey",
+        "postcode": "EN9 1BY",
+        "position": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.277805,
+          51.656694
+        ]
+      },
+      "properties": {
+        "name": "Borehamwood",
+        "postcode": "WD6 4PR",
+        "position": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.054651,
+          51.653761
+        ]
+      },
+      "properties": {
+        "name": "Enfield",
+        "postcode": "EN1 1TH",
+        "position": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.389487,
+          51.649103
+        ]
+      },
+      "properties": {
+        "name": "Watford",
+        "postcode": "WD17 2SF",
+        "position": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.719697,
+          51.618643
+        ]
+      },
+      "properties": {
+        "name": "High_Wycombe",
+        "postcode": "HP11 1FY",
+        "position": 16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.032249,
+          51.613179
+        ]
+      },
+      "properties": {
+        "name": "Chingford",
+        "postcode": "E4 8JA",
+        "position": 17
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.143116,
+          51.611571
+        ]
+      },
+      "properties": {
+        "name": "Friern_Barnet",
+        "postcode": "N11 3PW",
+        "position": 18
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.443534,
+          51.581143
+        ]
+      },
+      "properties": {
+        "name": "Basildon_Pipps_Hill",
+        "postcode": "SS14 3AF",
+        "position": 19
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.245101,
+          51.580711
+        ]
+      },
+      "properties": {
+        "name": "Hendon",
+        "postcode": "NW9 7TH",
+        "position": 20
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.602318,
+          51.575831
+        ]
+      },
+      "properties": {
+        "name": "Rayleigh",
+        "postcode": "SS67UP",
+        "position": 21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.084461,
+          51.574762
+        ]
+      },
+      "properties": {
+        "name": "Ilford",
+        "postcode": "IG2 6BE",
+        "position": 22
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.18457,
+          51.569209
+        ]
+      },
+      "properties": {
+        "name": "Romford",
+        "postcode": "RM7 0AN",
+        "position": 23
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.703482,
+          51.567778
+        ]
+      },
+      "properties": {
+        "name": "Southend-on-Sea",
+        "postcode": "SS2 6FW",
+        "position": 24
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.505725,
+          51.564192
+        ]
+      },
+      "properties": {
+        "name": "Basildon",
+        "postcode": "SS13 3BY",
+        "position": 25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.390474,
+          51.555701
+        ]
+      },
+      "properties": {
+        "name": "Ruislip",
+        "postcode": "HA4 0LN",
+        "position": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.13693,
+          51.543913
+        ]
+      },
+      "properties": {
+        "name": "Camden",
+        "postcode": "NW1 9EX",
+        "position": 27
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.705174,
+          51.541837
+        ]
+      },
+      "properties": {
+        "name": "Southend_Victoria",
+        "postcode": "SS1 1PA",
+        "position": 28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.34005,
+          51.541836
+        ]
+      },
+      "properties": {
+        "name": "Greenford",
+        "postcode": "UB6 0UW",
+        "position": 29
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.145621,
+          51.530577
+        ]
+      },
+      "properties": {
+        "name": "Dagenham",
+        "postcode": "RM9 6SJ",
+        "position": 30
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.616201,
+          51.522666
+        ]
+      },
+      "properties": {
+        "name": "Slough",
+        "postcode": "SL1 4XB",
+        "position": 31
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.070889,
+          51.521308
+        ]
+      },
+      "properties": {
+        "name": "Beckton",
+        "postcode": "E6 6LG",
+        "position": 32
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.717543,
+          51.518569
+        ]
+      },
+      "properties": {
+        "name": "Maidenhead",
+        "postcode": "SL6 1AY",
+        "position": 33
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.478082,
+          51.517916
+        ]
+      },
+      "properties": {
+        "name": "West_Drayton",
+        "postcode": "UB8 2TE",
+        "position": 34
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.397889,
+          51.51461
+        ]
+      },
+      "properties": {
+        "name": "Hayes",
+        "postcode": "UB4 0TU",
+        "position": 35
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.104076,
+          51.506662
+        ]
+      },
+      "properties": {
+        "name": "Thamesmead",
+        "postcode": "SE28 8RD",
+        "position": 36
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.020724,
+          51.488666
+        ]
+      },
+      "properties": {
+        "name": "Charlton",
+        "postcode": "SE7 7TZ",
+        "position": 37
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.271413,
+          51.485804
+        ]
+      },
+      "properties": {
+        "name": "Thurrock",
+        "postcode": "RM20 3LP",
+        "position": 38
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.068434,
+          51.484387
+        ]
+      },
+      "properties": {
+        "name": "Old_Kent_Road",
+        "postcode": "SE1 5BA",
+        "position": 39
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.314343,
+          51.482172
+        ]
+      },
+      "properties": {
+        "name": "Brentford",
+        "postcode": "TW8 8JW",
+        "position": 40
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.018139,
+          51.473071
+        ]
+      },
+      "properties": {
+        "name": "Blackheath",
+        "postcode": "SE10 8DA",
+        "position": 41
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.17659,
+          51.469573
+        ]
+      },
+      "properties": {
+        "name": "Battersea",
+        "postcode": "SW11 3RX",
+        "position": 42
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.288602,
+          51.463437
+        ]
+      },
+      "properties": {
+        "name": "Richmond",
+        "postcode": "TW9 1YB",
+        "position": 43
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.014177,
+          51.461326
+        ]
+      },
+      "properties": {
+        "name": "Tilehurst",
+        "postcode": "RG30 1PR",
+        "position": 44
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.181438,
+          51.451253
+        ]
+      },
+      "properties": {
+        "name": "Crayford",
+        "postcode": "DA1 4LD",
+        "position": 45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.033341,
+          51.451065
+        ]
+      },
+      "properties": {
+        "name": "Eltham",
+        "postcode": "SE9 5LT",
+        "position": 46
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.360571,
+          51.444158
+        ]
+      },
+      "properties": {
+        "name": "Gravesend",
+        "postcode": "DA11 0DQ",
+        "position": 47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.412804,
+          51.442892
+        ]
+      },
+      "properties": {
+        "name": "Feltham",
+        "postcode": "TW13 4EX",
+        "position": 48
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.894323,
+          51.435581
+        ]
+      },
+      "properties": {
+        "name": "Winnersh",
+        "postcode": "RG41 5HH",
+        "position": 49
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.970504,
+          51.434117
+        ]
+      },
+      "properties": {
+        "name": "Reading",
+        "postcode": "RG2 0HB",
+        "position": 50
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.033935,
+          51.429857
+        ]
+      },
+      "properties": {
+        "name": "Sydenham",
+        "postcode": "SE26 4PU",
+        "position": 51
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.185911,
+          51.429853
+        ]
+      },
+      "properties": {
+        "name": "Wimbledon",
+        "postcode": "SW17 0BW",
+        "position": 52
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.755313,
+          51.414577
+        ]
+      },
+      "properties": {
+        "name": "Bracknell",
+        "postcode": "RG12 1EN",
+        "position": 53
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.837922,
+          51.405767
+        ]
+      },
+      "properties": {
+        "name": "Wokingham",
+        "postcode": "RG40 2NU",
+        "position": 54
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.238117,
+          51.405065
+        ]
+      },
+      "properties": {
+        "name": "New_Malden",
+        "postcode": "SW20 0JQ",
+        "position": 55
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.112945,
+          51.392696
+        ]
+      },
+      "properties": {
+        "name": "Orpington",
+        "postcode": "BR5 3RP",
+        "position": 56
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.41812,
+          51.387939
+        ]
+      },
+      "properties": {
+        "name": "Walton_On_Thames",
+        "postcode": "KT12 2SS",
+        "position": 57
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.118057,
+          51.368721
+        ]
+      },
+      "properties": {
+        "name": "Croydon",
+        "postcode": "CR0 4NX",
+        "position": 58
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.576371,
+          51.367403
+        ]
+      },
+      "properties": {
+        "name": "Gillingham",
+        "postcode": "ME8 0PU",
+        "position": 59
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.398326,
+          51.361584
+        ]
+      },
+      "properties": {
+        "name": "Broadstairs",
+        "postcode": "CT10 2RQ",
+        "position": 60
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.507228,
+          51.350979
+        ]
+      },
+      "properties": {
+        "name": "Chatham",
+        "postcode": "ME5 9SQ",
+        "position": 61
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.735686,
+          51.345021
+        ]
+      },
+      "properties": {
+        "name": "Sittingbourne",
+        "postcode": "ME10 2XD",
+        "position": 62
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.477112,
+          51.340225
+        ]
+      },
+      "properties": {
+        "name": "Byfleet",
+        "postcode": "KT14 7NP",
+        "position": 63
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.542921,
+          51.32359
+        ]
+      },
+      "properties": {
+        "name": "Woking",
+        "postcode": "GU22 8BD",
+        "position": 64
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.193667,
+          51.298772
+        ]
+      },
+      "properties": {
+        "name": "Sevenoaks",
+        "postcode": "TN14 5EW",
+        "position": 65
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.469822,
+          51.293972
+        ]
+      },
+      "properties": {
+        "name": "Maidstone",
+        "postcode": "ME20 7TP",
+        "position": 66
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.099587,
+          51.291295
+        ]
+      },
+      "properties": {
+        "name": "Canterbury_Sturry_Road",
+        "postcode": "CT1 1DX",
+        "position": 67
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.760255,
+          51.290186
+        ]
+      },
+      "properties": {
+        "name": "Farnborough",
+        "postcode": "GU14 7QL",
+        "position": 68
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.063353,
+          51.271737
+        ]
+      },
+      "properties": {
+        "name": "Canterbury",
+        "postcode": "CT1 3TQ",
+        "position": 69
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.169423,
+          51.235174
+        ]
+      },
+      "properties": {
+        "name": "Redhill",
+        "postcode": "RH1 6QL",
+        "position": 70
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.141485,
+          51.233957
+        ]
+      },
+      "properties": {
+        "name": "Basingstoke",
+        "postcode": "RG22 4TT",
+        "position": 71
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.32926,
+          51.233309
+        ]
+      },
+      "properties": {
+        "name": "Dorking",
+        "postcode": "RH4 1RU",
+        "position": 72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.783878,
+          51.218514
+        ]
+      },
+      "properties": {
+        "name": "Farnham",
+        "postcode": "GU9 9QJ",
+        "position": 73
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.607271,
+          51.18737
+        ]
+      },
+      "properties": {
+        "name": "Godalming",
+        "postcode": "GU7 1DR",
+        "position": 74
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.956537,
+          51.157421
+        ]
+      },
+      "properties": {
+        "name": "Alton",
+        "postcode": "GU34 2QS",
+        "position": 75
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.28795,
+          51.155923
+        ]
+      },
+      "properties": {
+        "name": "Tunbridge_Wells",
+        "postcode": "TN2 3FB",
+        "position": 76
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.29854,
+          51.153865
+        ]
+      },
+      "properties": {
+        "name": "Dover",
+        "postcode": "CT16 3PS",
+        "position": 77
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.035134,
+          51.137408
+        ]
+      },
+      "properties": {
+        "name": "East_Grinstead",
+        "postcode": "RH19 1QL",
+        "position": 78
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.870721,
+          51.135177
+        ]
+      },
+      "properties": {
+        "name": "Ashford",
+        "postcode": "TN23 7DH",
+        "position": 79
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.190845,
+          51.134507
+        ]
+      },
+      "properties": {
+        "name": "Crawley",
+        "postcode": "RH11 7ST",
+        "position": 80
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.166973,
+          51.09503
+        ]
+      },
+      "properties": {
+        "name": "Folkestone",
+        "postcode": "CT19 5SY",
+        "position": 81
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.325105,
+          51.061363
+        ]
+      },
+      "properties": {
+        "name": "Horsham",
+        "postcode": "RH12 1HR",
+        "position": 82
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.149078,
+          50.950564
+        ]
+      },
+      "properties": {
+        "name": "Burgess_Hill",
+        "postcode": "RH15 9QT",
+        "position": 83
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.553231,
+          50.887918
+        ]
+      },
+      "properties": {
+        "name": "Hastings",
+        "postcode": "TN37 7PB",
+        "position": 84
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.986896,
+          50.850524
+        ]
+      },
+      "properties": {
+        "name": "Havant",
+        "postcode": "PO9 1ND",
+        "position": 85
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.501216,
+          50.844874
+        ]
+      },
+      "properties": {
+        "name": "Bexhill",
+        "postcode": "TN40 2JS",
+        "position": 86
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.757297,
+          50.841461
+        ]
+      },
+      "properties": {
+        "name": "Chichester",
+        "postcode": "PO19 7YH",
+        "position": 87
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.17436,
+          50.837916
+        ]
+      },
+      "properties": {
+        "name": "Hove",
+        "postcode": "BN3 7PN",
+        "position": 88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.36701,
+          50.834955
+        ]
+      },
+      "properties": {
+        "name": "Worthing",
+        "postcode": "BN14 9GB",
+        "position": 89
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.498092,
+          50.817576
+        ]
+      },
+      "properties": {
+        "name": "Rustington",
+        "postcode": "BN16 3RT",
+        "position": 90
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.054632,
+          50.81583
+        ]
+      },
+      "properties": {
+        "name": "Portsmouth",
+        "postcode": "PO3 5LZ",
+        "position": 91
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.667151,
+          50.798685
+        ]
+      },
+      "properties": {
+        "name": "Bognor_Regis",
+        "postcode": "PO22 9NF",
+        "position": 92
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.059491,
+          50.798205
+        ]
+      },
+      "properties": {
+        "name": "Newhaven",
+        "postcode": "BN9 0AG",
+        "position": 93
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.303047,
+          50.787017
+        ]
+      },
+      "properties": {
+        "name": "Eastbourne",
+        "postcode": "BN23 6QD",
+        "position": 94
+      }
+    }
+  ]
+}
