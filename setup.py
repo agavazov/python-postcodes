@@ -1,8 +1,19 @@
 from setuptools import setup, find_packages
+import unittest
 
+
+# Define test suite settings
+def my_test_suite():
+    test_loader = unittest.TestLoader()
+    test_suite = test_loader.discover('tests', pattern='test_*.py')
+    return test_suite
+
+
+# Open README file and set it as long_description
 with open("README.md", "r") as f:
     long_description = f.read()
 
+# Configure python setup() settings
 setup(
     name="postcode-task",
     version="0.1",
@@ -16,6 +27,7 @@ setup(
     install_requires=[
         "Flask"
     ],
+    test_suite='setup.my_test_suite',
     packages=find_packages(),
     scripts=[
         "foo/bar",

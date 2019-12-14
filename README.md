@@ -11,3 +11,7 @@
 - use flask
 - provide graphical maps
 - add Dockerfile or docker-compose.yaml
+
+
+## How to test the project
+`python setup.py test`

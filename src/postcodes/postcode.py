@@ -46,7 +46,7 @@ class Postcode:
             raise TypeError("code value must be a string type")
 
         # Validation of the length
-        if len(code) < 0:
+        if len(code) < 1:
             raise ValueError("code must be at leas 1 character")
 
         self._code = code
@@ -72,6 +72,10 @@ class Postcode:
         # Validation the type of the name
         if not isinstance(name, str):
             raise TypeError("name value must be a string type")
+
+        # Validation of the length
+        if len(name) < 1:
+            raise ValueError("name must be at leas 1 character")
 
         self._name = name
 
@@ -99,12 +103,12 @@ class Postcode:
             return
 
         # Validation the type of the lon
-        if not isinstance(lon, float):
+        if not isinstance(lon, float) and not isinstance(lon, int):
             raise TypeError("lon value must be a float type")
 
         # Check for range between -180 and 180
         if lon < -180 or lon > 180:
-            raise TypeError("lon value must be a float type")
+            raise ValueError("lon value must be a float type")
 
         self._lon = lon
 
@@ -132,11 +136,11 @@ class Postcode:
             return
 
         # Validation the type of the lat
-        if not isinstance(lat, float):
+        if not isinstance(lat, float) and not isinstance(lat, int):
             raise TypeError("lat value must be a float type")
 
-        # Check for range between -180 and 180
-        if lat < -180 or lat > 180:
-            raise TypeError("lat value must be a float type")
+        # Check for range between -90 and 90
+        if lat < -90 or lat > 90:
+            raise ValueError("lat value must be a float type")
 
         self._lat = lat
