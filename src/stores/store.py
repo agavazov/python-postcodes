@@ -1,16 +1,16 @@
-class Postcode:
-    """Single postcode record.
+class Store:
+    """Store record
 
     Each postcode record contains basic information like name
     and coordinates in WGS84 geographic system
 
     """
 
-    def __init__(self, code: str, name: str, lon: float = None, lat: float = None):
-        """Create new postcode record.
+    def __init__(self, postcode: str, name: str, lon: float = None, lat: float = None):
+        """Create new store record.
 
         Args:
-            code (str): Postcode identification
+            postcode (str): Postcode identification
             name (str): Simple information about the postcode (like place name)
             lon (float, optional): Longitude of the postcode in WGS84
             lat (float, optional): Latitude of the postcode in WGS84
@@ -18,19 +18,19 @@ class Postcode:
         """
 
         # Set constructor values
-        self.code = code
+        self.postcode = postcode
         self.name = name
         self.lon = lon
         self.lat = lat
 
     @property
-    def code(self) -> str:
+    def postcode(self) -> str:
         """code getter"""
 
         return self._code
 
-    @code.setter
-    def code(self, code: str):
+    @postcode.setter
+    def postcode(self, code: str):
         """code setter
 
         The postcode can be international so the minimal requirement is to be

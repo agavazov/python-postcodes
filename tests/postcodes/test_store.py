@@ -1,49 +1,49 @@
 import unittest
-from src.postcodes import Postcode
+from src.stores import Store
 
 
 class TestCode(unittest.TestCase):
     def test_init_set(self):
-        test_code = "SN25 2EG"
+        test_postcode = "SN25 2EG"
 
         # Init the class
-        postcode = Postcode(code=test_code, name="Shop")
+        postcode = Store(postcode=test_postcode, name="Shop")
 
         # Check assertion
-        self.assertEqual(postcode.code, test_code)
+        self.assertEqual(postcode.postcode, test_postcode)
 
     def test_init_required_param(self):
         # Expect type error
         with self.assertRaises(TypeError):
-            Postcode(name="Shop")
+            Store(name="Shop")
 
     def test_setter_update(self):
-        test_code = "SN25 XXX"
+        test_postcode = "SN25 XXX"
 
         # Init the class
-        postcode = Postcode(code="SN25 2EG", name="Shop")
-        postcode.code = test_code
+        postcode = Store(postcode="SN25 2EG", name="Shop")
+        postcode.postcode = test_postcode
 
         # Check assertion
-        self.assertEqual(postcode.code, test_code)
+        self.assertEqual(postcode.postcode, test_postcode)
 
-    def test_code_type_init(self):
+    def test_postcode_type_init(self):
         # Exception constructor TypeError
         with self.assertRaises(TypeError):
-            Postcode(code=1234, name="Shop")
+            Store(postcode=1234, name="Shop")
 
-    def test_code_type_setter(self):
+    def test_postcode_type_setter(self):
         # Init setter TypeError
-        postcode = Postcode(code="SN25 2EG", name="Shop")
+        postcode = Store(postcode="SN25 2EG", name="Shop")
 
         # Expect type error
         with self.assertRaises(TypeError):
-            postcode.code = 1234
+            postcode.postcode = 1234
 
-    def test_code_length(self):
+    def test_postcode_length(self):
         # Expect constructor ValueError
         with self.assertRaises(ValueError):
-            Postcode(code="", name="Shop")
+            Store(postcode="", name="Shop")
 
 
 class TestName(unittest.TestCase):
@@ -51,7 +51,7 @@ class TestName(unittest.TestCase):
         test_name = "Some Name"
 
         # Init the class
-        postcode = Postcode(code="SN25 2EG", name=test_name)
+        postcode = Store(postcode="SN25 2EG", name=test_name)
 
         # Check assertion
         self.assertEqual(postcode.name, test_name)
@@ -59,13 +59,13 @@ class TestName(unittest.TestCase):
     def test_init_required_param(self):
         # Expect type error
         with self.assertRaises(TypeError):
-            Postcode(code="SN25 2EG")
+            Store(postcode="SN25 2EG")
 
     def test_setter_update(self):
         test_name = "Some Name"
 
         # Init the class
-        postcode = Postcode(code="SN25 2EG", name=test_name)
+        postcode = Store(postcode="SN25 2EG", name=test_name)
         postcode.name = test_name
 
         # Check assertion
@@ -74,11 +74,11 @@ class TestName(unittest.TestCase):
     def test_name_type_init(self):
         # Exception constructor TypeError
         with self.assertRaises(TypeError):
-            Postcode(code="SN25 2EG", name=1234)
+            Store(postcode="SN25 2EG", name=1234)
 
     def test_name_type_setter(self):
         # Init setter TypeError
-        postcode = Postcode(code="SN25 2EG", name="Shop")
+        postcode = Store(postcode="SN25 2EG", name="Shop")
 
         # Expect type error
         with self.assertRaises(TypeError):
@@ -87,7 +87,7 @@ class TestName(unittest.TestCase):
     def test_name_length(self):
         # Expect constructor ValueError
         with self.assertRaises(ValueError):
-            Postcode(code="SN25 2EG", name="")
+            Store(postcode="SN25 2EG", name="")
 
 
 class TestLongitude(unittest.TestCase):
@@ -95,7 +95,7 @@ class TestLongitude(unittest.TestCase):
         test_lon = 12.34
 
         # Init the class
-        postcode = Postcode(code="SN25 2EG", name="Shop", lon=test_lon)
+        postcode = Store(postcode="SN25 2EG", name="Shop", lon=test_lon)
 
         # Check assertion
         self.assertEqual(postcode.lon, test_lon)
@@ -104,7 +104,7 @@ class TestLongitude(unittest.TestCase):
         test_lon = 12.34
 
         # Init the class
-        postcode = Postcode(code="SN25 2EG", name="Shop", lon=test_lon)
+        postcode = Store(postcode="SN25 2EG", name="Shop", lon=test_lon)
         postcode.lon = test_lon
 
         # Check assertion
@@ -113,17 +113,17 @@ class TestLongitude(unittest.TestCase):
     def test_lat_type_init(self):
         # Exception constructor TypeError
         with self.assertRaises(TypeError):
-            Postcode(code="SN25 2EG", name="Shop", lon="12.34")
+            Store(postcode="SN25 2EG", name="Shop", lon="12.34")
 
     def test_lat_type_number(self):
         try:
-            Postcode(code="SN25 2EG", name="Shop", lon=12)
+            Store(postcode="SN25 2EG", name="Shop", lon=12)
         except IndexError:
             self.fail("Exception raised")
 
     def test_lat_type_setter(self):
         # Init setter TypeError
-        postcode = Postcode(code="SN25 2EG", name="Shop")
+        postcode = Store(postcode="SN25 2EG", name="Shop")
 
         # Expect type error
         with self.assertRaises(TypeError):
@@ -132,12 +132,12 @@ class TestLongitude(unittest.TestCase):
     def test_lat_max(self):
         # Expect ValueError about out of range
         with self.assertRaises(ValueError):
-            Postcode(code="SN25 2EG", name="Shop", lon=190)
+            Store(postcode="SN25 2EG", name="Shop", lon=190)
 
     def test_lat_min(self):
         # Expect ValueError about out of range
         with self.assertRaises(ValueError):
-            Postcode(code="SN25 2EG", name="Shop", lon=-190)
+            Store(postcode="SN25 2EG", name="Shop", lon=-190)
 
 
 class TestLatitude(unittest.TestCase):
@@ -145,7 +145,7 @@ class TestLatitude(unittest.TestCase):
         test_lat = 12.34
 
         # Init the class
-        postcode = Postcode(code="SN25 2EG", name="Shop", lat=test_lat)
+        postcode = Store(postcode="SN25 2EG", name="Shop", lat=test_lat)
 
         # Check assertion
         self.assertEqual(postcode.lat, test_lat)
@@ -154,7 +154,7 @@ class TestLatitude(unittest.TestCase):
         test_lat = 12.34
 
         # Init the class
-        postcode = Postcode(code="SN25 2EG", name="Shop", lat=test_lat)
+        postcode = Store(postcode="SN25 2EG", name="Shop", lat=test_lat)
         postcode.lat = test_lat
 
         # Check assertion
@@ -163,17 +163,17 @@ class TestLatitude(unittest.TestCase):
     def test_lat_type_init(self):
         # Exception constructor TypeError
         with self.assertRaises(TypeError):
-            Postcode(code="SN25 2EG", name="Shop", lat="12.34")
+            Store(postcode="SN25 2EG", name="Shop", lat="12.34")
 
     def test_lat_type_number(self):
         try:
-            Postcode(code="SN25 2EG", name="Shop", lat=12)
+            Store(postcode="SN25 2EG", name="Shop", lat=12)
         except IndexError:
             self.fail("Exception raised")
 
     def test_lat_type_setter(self):
         # Init setter TypeError
-        postcode = Postcode(code="SN25 2EG", name="Shop")
+        postcode = Store(postcode="SN25 2EG", name="Shop")
 
         # Expect type error
         with self.assertRaises(TypeError):
@@ -182,12 +182,12 @@ class TestLatitude(unittest.TestCase):
     def test_lat_max(self):
         # Expect ValueError about out of range
         with self.assertRaises(ValueError):
-            Postcode(code="SN25 2EG", name="Shop", lat=100)
+            Store(postcode="SN25 2EG", name="Shop", lat=100)
 
     def test_lat_min(self):
         # Expect ValueError about out of range
         with self.assertRaises(ValueError):
-            Postcode(code="SN25 2EG", name="Shop", lat=-100)
+            Store(postcode="SN25 2EG", name="Shop", lat=-100)
 
 
 if __name__ == '__main__':
