@@ -42,8 +42,17 @@ def in_radius(radius: float, center_lon: float, center_lat: float, point_lon: fl
     Filter function for radius check
 
     Example:
-        points = [{lon: 1, lat: 2}, {lon: 1, lat: 2}]
-        @todo write the example
+        points = [
+            # In 2 km
+            [23.285487, 42.653729, "IN1"],
+            [23.283169, 42.654171, "IN2"],
+            [23.281624, 42.658211, "IN3"],
+            # Out or range
+            [23.339732, 42.631884, "OUT1"],
+            [23.238022, 42.663134, "OUT2"],
+        ]
+        result = filter(lambda x: in_radius(2, 23.283341, 42.654045, x[0], x[1]), points)
+        print(list(result))
 
     Args:
         radius (float): Radius in KM

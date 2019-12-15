@@ -184,5 +184,5 @@ class StoresCollection:
 
         # Open the file and writes the data
         f = open(file_path, "w")
-        f.write(json.dumps(self.export_json(), separators=(",", ":")))
+        f.write(self.export_json())
         f.close()
