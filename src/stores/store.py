@@ -1,3 +1,6 @@
+from .errors import *
+
+
 class Store:
     """
     Store record
@@ -48,11 +51,11 @@ class Store:
 
         # Validation the type of the code
         if not isinstance(code, str):
-            raise TypeError("code value must be a string type")
+            raise StoreInvalidDefinitionError("code value must be a string type")
 
         # Validation of the length
         if len(code) < 1:
-            raise ValueError("code must be at leas 1 character")
+            raise StoreInvalidDefinitionError("code must be at leas 1 character")
 
         self._code = code
 
@@ -79,11 +82,11 @@ class Store:
 
         # Validation the type of the name
         if not isinstance(name, str):
-            raise TypeError("name value must be a string type")
+            raise StoreInvalidDefinitionError("name value must be a string type")
 
         # Validation of the length
         if len(name) < 1:
-            raise ValueError("name must be at leas 1 character")
+            raise StoreInvalidDefinitionError("name must be at leas 1 character")
 
         self._name = name
 
@@ -115,11 +118,11 @@ class Store:
 
         # Validation the type of the lon
         if not isinstance(lon, float) and not isinstance(lon, int):
-            raise TypeError("lon value must be a float type")
+            raise StoreInvalidDefinitionError("lon value must be a float type")
 
         # Check for range between -180 and 180
         if lon < -180 or lon > 180:
-            raise ValueError("lon value must be a float type")
+            raise StoreInvalidDefinitionError("lon value must be a float type")
 
         self._lon = lon
 
@@ -151,11 +154,11 @@ class Store:
 
         # Validation the type of the lat
         if not isinstance(lat, float) and not isinstance(lat, int):
-            raise TypeError("lat value must be a float type")
+            raise StoreInvalidDefinitionError("lat value must be a float type")
 
         # Check for range between -90 and 90
         if lat < -90 or lat > 90:
-            raise ValueError("lat value must be a float type")
+            raise StoreInvalidDefinitionError("lat value must be a float type")
 
         self._lat = lat
 

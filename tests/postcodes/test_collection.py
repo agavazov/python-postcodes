@@ -1,6 +1,7 @@
 import unittest
 from json.decoder import JSONDecodeError
 from src.stores import Store, StoresCollection
+from src.stores.errors import *
 
 
 class TestAppend(unittest.TestCase):
@@ -32,8 +33,8 @@ class TestAppend(unittest.TestCase):
         # Append stores
         collection = StoresCollection()
 
-        # Exception constructor TypeError
-        with self.assertRaises(TypeError):
+        # Exception constructor StoreInvalidDefinitionError
+        with self.assertRaises(StoreInvalidDefinitionError):
             collection.append({
                 "foo": "bar"
             })
@@ -70,8 +71,8 @@ class TestSort(unittest.TestCase):
         self.assertEqual(self.collection.stores[2].name, "aA")
 
     def test_append_wrong_sort_ket(self):
-        # Exception constructor TypeError
-        with self.assertRaises(KeyError):
+        # Exception constructor WrongSortKeyError
+        with self.assertRaises(WrongSortKeyError):
             self.collection.sort(sort_key="WRONG")
 
 
@@ -85,15 +86,15 @@ class TestImport(unittest.TestCase):
     def test_non_exist_file(self):
         collection = StoresCollection()
 
-        # Exception constructor FileNotFoundError
-        with self.assertRaises(FileNotFoundError):
+        # Exception constructor InvalidJsonFile
+        with self.assertRaises(InvalidJsonFile):
             collection.import_json_file("./random/a/s/d/f.json")
 
     def test_non_json_file(self):
         collection = StoresCollection()
 
-        # Exception constructor JSONDecodeError
-        with self.assertRaises(JSONDecodeError):
+        # Exception constructor InvalidJsonFile
+        with self.assertRaises(InvalidJsonFile):
             collection.import_json_file(__file__)
 
 
@@ -129,8 +130,8 @@ class TestJsonImport(unittest.TestCase):
     def test_wrong_json_format(self):
         collection = StoresCollection()
 
-        # Exception constructor TypeError
-        with self.assertRaises(TypeError):
+        # Exception constructor StoreInvalidDefinitionError
+        with self.assertRaises(StoreInvalidDefinitionError):
             collection.import_json('[{"A": "B", "C": "D"}]')
 
     def test_export_json(self):

@@ -1,5 +1,6 @@
 import unittest
 from src.stores import Store
+from src.stores.errors import *
 
 
 class TestCode(unittest.TestCase):
@@ -28,21 +29,21 @@ class TestCode(unittest.TestCase):
         self.assertEqual(postcode.postcode, test_postcode)
 
     def test_postcode_type_init(self):
-        # Exception constructor TypeError
-        with self.assertRaises(TypeError):
+        # Exception constructor StoreInvalidDefinitionError
+        with self.assertRaises(StoreInvalidDefinitionError):
             Store(postcode=1234, name="Shop")
 
     def test_postcode_type_setter(self):
-        # Init setter TypeError
+        # Init setter StoreInvalidDefinitionError
         postcode = Store(postcode="SN25 2EG", name="Shop")
 
         # Expect type error
-        with self.assertRaises(TypeError):
+        with self.assertRaises(StoreInvalidDefinitionError):
             postcode.postcode = 1234
 
     def test_postcode_length(self):
-        # Expect constructor ValueError
-        with self.assertRaises(ValueError):
+        # Expect constructor StoreInvalidDefinitionError
+        with self.assertRaises(StoreInvalidDefinitionError):
             Store(postcode="", name="Shop")
 
 
@@ -72,21 +73,21 @@ class TestName(unittest.TestCase):
         self.assertEqual(postcode.name, test_name)
 
     def test_name_type_init(self):
-        # Exception constructor TypeError
-        with self.assertRaises(TypeError):
+        # Exception constructor StoreInvalidDefinitionError
+        with self.assertRaises(StoreInvalidDefinitionError):
             Store(postcode="SN25 2EG", name=1234)
 
     def test_name_type_setter(self):
-        # Init setter TypeError
+        # Init setter StoreInvalidDefinitionError
         postcode = Store(postcode="SN25 2EG", name="Shop")
 
         # Expect type error
-        with self.assertRaises(TypeError):
+        with self.assertRaises(StoreInvalidDefinitionError):
             postcode.name = 1234
 
     def test_name_length(self):
-        # Expect constructor ValueError
-        with self.assertRaises(ValueError):
+        # Expect constructor StoreInvalidDefinitionError
+        with self.assertRaises(StoreInvalidDefinitionError):
             Store(postcode="SN25 2EG", name="")
 
 
@@ -111,8 +112,8 @@ class TestLongitude(unittest.TestCase):
         self.assertEqual(postcode.lon, test_lon)
 
     def test_lat_type_init(self):
-        # Exception constructor TypeError
-        with self.assertRaises(TypeError):
+        # Exception constructor StoreInvalidDefinitionError
+        with self.assertRaises(StoreInvalidDefinitionError):
             Store(postcode="SN25 2EG", name="Shop", lon="12.34")
 
     def test_lat_type_number(self):
@@ -122,21 +123,21 @@ class TestLongitude(unittest.TestCase):
             self.fail("Exception raised")
 
     def test_lat_type_setter(self):
-        # Init setter TypeError
+        # Init setter StoreInvalidDefinitionError
         postcode = Store(postcode="SN25 2EG", name="Shop")
 
         # Expect type error
-        with self.assertRaises(TypeError):
+        with self.assertRaises(StoreInvalidDefinitionError):
             postcode.lon = "12.34"
 
     def test_lat_max(self):
-        # Expect ValueError about out of range
-        with self.assertRaises(ValueError):
+        # Expect StoreInvalidDefinitionError about out of range
+        with self.assertRaises(StoreInvalidDefinitionError):
             Store(postcode="SN25 2EG", name="Shop", lon=190)
 
     def test_lat_min(self):
-        # Expect ValueError about out of range
-        with self.assertRaises(ValueError):
+        # Expect StoreInvalidDefinitionError about out of range
+        with self.assertRaises(StoreInvalidDefinitionError):
             Store(postcode="SN25 2EG", name="Shop", lon=-190)
 
 
@@ -161,8 +162,8 @@ class TestLatitude(unittest.TestCase):
         self.assertEqual(postcode.lat, test_lat)
 
     def test_lat_type_init(self):
-        # Exception constructor TypeError
-        with self.assertRaises(TypeError):
+        # Exception constructor StoreInvalidDefinitionError
+        with self.assertRaises(StoreInvalidDefinitionError):
             Store(postcode="SN25 2EG", name="Shop", lat="12.34")
 
     def test_lat_type_number(self):
@@ -173,21 +174,21 @@ class TestLatitude(unittest.TestCase):
             self.fail("Exception raised")
 
     def test_lat_type_setter(self):
-        # Init setter TypeError
+        # Init setter StoreInvalidDefinitionError
         postcode = Store(postcode="SN25 2EG", name="Shop")
 
         # Expect type error
-        with self.assertRaises(TypeError):
+        with self.assertRaises(StoreInvalidDefinitionError):
             postcode.lat = "12.34"
 
     def test_lat_max(self):
-        # Expect ValueError about out of range
-        with self.assertRaises(ValueError):
+        # Expect StoreInvalidDefinitionError about out of range
+        with self.assertRaises(StoreInvalidDefinitionError):
             Store(postcode="SN25 2EG", name="Shop", lat=100)
 
     def test_lat_min(self):
-        # Expect ValueError about out of range
-        with self.assertRaises(ValueError):
+        # Expect StoreInvalidDefinitionError about out of range
+        with self.assertRaises(StoreInvalidDefinitionError):
             Store(postcode="SN25 2EG", name="Shop", lat=-100)
 
 

@@ -1,5 +1,7 @@
 from . import Store
+from .errors import *
 import json
+from json.decoder import JSONDecodeError
 
 
 class StoresCollection:
@@ -74,10 +76,13 @@ class StoresCollection:
             # If the store is not instance of Store class the make it
             if isinstance(store, dict):
                 # Apply dictionary keys as arguments
-                stores[index] = Store(**store)
+                try:
+                    stores[index] = Store(**store)
+                except TypeError:
+                    raise StoreInvalidDefinitionError("Dictionary keys are not as Store class expect")
             elif not isinstance(store, Store):
                 # Validate the final type
-                raise ValueError("store item must be a Dictionary or a Store instance")
+                raise StoreInvalidDefinitionError("Store item must be a Dictionary or a Store instance")
 
         # Merge lists
         self.stores += stores
@@ -94,7 +99,7 @@ class StoresCollection:
 
         # Check is the sort key existing in the Store properties
         if not hasattr(Store, sort_key):
-            raise KeyError("The sort key is not defined in Store class")
+            raise WrongSortKeyError("The sort key is not defined in Store class")
 
         # key is not dynamic -> self.stores.sort(key=lambda store: store.postcode, reverse=reverse)
         # there is a problem with None -> self.stores.sort(key=lambda store: getattr(store, sort_key), reverse=reverse)
@@ -148,9 +153,14 @@ class StoresCollection:
         """
 
         # Read the file
-        with open(file_path) as json_data:
-            # Cast the file data to string and send it to self.import_json
-            self.import_json(json_data.read(), overwrite)
+        try:
+            with open(file_path) as json_data:
+                # Cast the file data to string and send it to self.import_json
+                self.import_json(json_data.read(), overwrite)
+        except FileNotFoundError:
+            raise InvalidJsonFile("File not found")
+        except JSONDecodeError:
+            raise InvalidJsonFile("File content is not JSON")
 
     def export_json_file(self, file_path: str):
         """
