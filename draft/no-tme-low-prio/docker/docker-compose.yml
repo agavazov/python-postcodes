@@ -1,0 +1,21 @@
+version: "3.7"
+
+# Build eco-system with:
+# - Reverse proxy
+# - Static server for the html
+# - Flask server for REST
+
+services:
+  static:
+    ports: # @todo remove me
+      - 80:80
+    build: ./test-static
+    restart: always
+    volumes:
+      - ./../map-html/:/usr/share/nginx/html/
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
