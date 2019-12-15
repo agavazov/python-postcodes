@@ -142,4 +142,4 @@ print(collection.export_json())
 ### Example: src.stores.adapter.bulk_coordinates_download
 Bulk postcode finder (per 100 chunks)
 
-![png](https://raw.githubusercontent.com/agavazov/python-postcodes/master/examples/images/flask-example-1.png)
+![png](https://raw.githubusercontent.com/agavazov/python-postcodes/master/examples/images/flask-example-1.jpg)
