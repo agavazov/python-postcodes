@@ -137,3 +137,9 @@ collection.export_json_file("./build_collection.json")
 # Dump raw JSON string
 print(collection.export_json())
 ```
+
+## Flask web examples
+### Example: src.stores.adapter.bulk_coordinates_download
+Bulk postcode finder (per 100 chunks)
+
+![png](https://raw.githubusercontent.com/agavazov/python-postcodes/master/examples/images/flask-example-1.png)

@@ -1,11 +1,17 @@
-from flask import Flask
+from flask import *
+from src.stores import *
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="./app/templates/", static_folder="./app/static/")
 
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
+def home():
+    return render_template("index.html")
+
+
+@app.route('/get-postcodes-coordinates', methods=['POST'])
+def get_postcodes_coordinates():
+    return jsonify(bulk_coordinates_download(request.form.getlist("postcodes[]")))
 
 
 if __name__ == '__main__':

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Python Demo Task</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css" rel="stylesheet"/>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+    <script src="/example1.js"></script>
+
+    <script>
+        mapboxgl.accessToken = "pk.eyJ1IjoiYWdhdmF6b3YiLCJhIjoiY2s0NWk3ampmMDN2cTNrbXQ2MHJvajJhdSJ9.H1HaRtJVzBqPgehTTvHijA";
+    </script>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <strong>Example: <kbd>src.stores.adapter.bulk_coordinates_download</kbd></strong>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="example1Postcodes">Postcodes separated with <strong class="badge badge-primary">;</strong></label>
+                <textarea id="example1Postcodes" class="form-control" rows="4">EC4A 2AG; INVALID; EC4M 7AW; XXX XXX; EC3M 3AJ; EC4V 3DS; EC4P 4GU; EC4V 5AQ; EC3N 2AB; EC1R 4TW; EC1M 5UY; EC1R 1XA; EC1V 9GR; EC3N 1NT; EC2A 1YP; EC2R 7HD; EC1R 4RE; EC2M 4AA; EC1R 3BH; EC4N 8AD; EC4N 8AA; EC2A 3AN; EC1M 4BL; EC4N 1SR; EC1A 2DE; EC1V 3NY; EC1M 5UT; EC2A 4PP; EC3R 5BT</textarea>
+            </div>
+
+            <button class="btn btn-primary btn-block mb-3" onclick="example1.run();">Show the results on the map</button>
+
+            <div id="example1Map" style="height: 400px;"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
