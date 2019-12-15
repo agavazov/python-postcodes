@@ -166,6 +166,7 @@ class TestLatitude(unittest.TestCase):
             Store(postcode="SN25 2EG", name="Shop", lat="12.34")
 
     def test_lat_type_number(self):
+        # Init without exception
         try:
             Store(postcode="SN25 2EG", name="Shop", lat=12)
         except IndexError:

@@ -1,15 +1,18 @@
 class Spatial:
     def sort(self):
-        """@todo
+        """
+        @todo
         @todo
         """
 
     def filter_by_radius(self):
-        """@todo
+        """
+        @todo
         @todo
         """
 
     def points_distance(self):
-        """@todo
+        """
+        @todo
         @todo
         """

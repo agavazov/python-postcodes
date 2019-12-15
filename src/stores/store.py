@@ -1,5 +1,6 @@
 class Store:
-    """Store record
+    """
+    Store record
 
     Each postcode record contains basic information like name
     and coordinates in WGS84 geographic system
@@ -7,7 +8,8 @@ class Store:
     """
 
     def __init__(self, postcode: str, name: str, lon: float = None, lat: float = None):
-        """Create new store record.
+        """
+        Create new store record.
 
         Args:
             postcode (str): Postcode identification
@@ -25,13 +27,16 @@ class Store:
 
     @property
     def postcode(self) -> str:
-        """code getter"""
+        """
+        "code" getter
+        """
 
         return self._code
 
     @postcode.setter
     def postcode(self, code: str):
-        """code setter
+        """
+        "code" setter
 
         The postcode can be international so the minimal requirement is to be
         at least 1 character length
@@ -53,13 +58,16 @@ class Store:
 
     @property
     def name(self) -> str:
-        """name getter"""
+        """
+        "name" getter
+        """
 
         return self._name
 
     @name.setter
     def name(self, name: str):
-        """name setter
+        """
+        "name" setter
 
         The postcode can be international so the minimal requirement is to be
         at least 1 character length
@@ -81,13 +89,16 @@ class Store:
 
     @property
     def lon(self) -> float:
-        """lon getter"""
+        """
+        "lon" getter
+        """
 
         return self._lon
 
     @lon.setter
     def lon(self, lon: float):
-        """lon setter
+        """
+        "lon" setter
 
         Set Longitude in the range -180 and +180 specifying coordinates
         west and east of the Prime Meridian
@@ -114,13 +125,16 @@ class Store:
 
     @property
     def lat(self) -> float:
-        """lat getter"""
+        """
+        "lat" getter
+        """
 
         return self._lat
 
     @lat.setter
     def lat(self, lat: float):
-        """lat setter
+        """
+        "lat" setter
 
         Set Latitude in the range -90 and +90 for the
         southern and northern hemisphere respectively
@@ -144,3 +158,20 @@ class Store:
             raise ValueError("lat value must be a float type")
 
         self._lat = lat
+
+    def serialize(self) -> object:
+        """
+        export current object
+
+        With serialization you can have clean object
+        which can be used for JSON.dump or other actions
+        The main propose is to be unwrapped from Store class
+
+        """
+
+        return {
+            "postcode": self.postcode,
+            "name": self.name,
+            "lon": self.lon,
+            "lat": self.lat
+        }

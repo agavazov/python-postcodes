@@ -29,10 +29,6 @@ setup(
     ],
     test_suite='setup.my_test_suite',
     packages=find_packages(),
-    scripts=[
-        "foo/bar",
-        "asd/fgh",
-    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
