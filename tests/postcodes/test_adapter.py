@@ -48,13 +48,13 @@ class TestLoader(unittest.TestCase):
 
         # Exception constructor ApiNoPostCodeResult
         with self.assertRaises(ApiNoPostCodeResult):
-            lon_lat_loader(collection=collection, raise_error_on_missing_postcode=True)
+            geo_collection_loader(collection=collection, raise_error_on_missing_postcode=True)
 
     def test_store_file(self):
         collection = StoresCollection()
         collection.import_json_file("./tests/stores.json")
 
-        lon_lat_loader(collection)
+        geo_collection_loader(collection)
 
         # Expected latitude > 0
         self.assertGreater(collection.stores[0].lat, 0)

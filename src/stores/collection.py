@@ -110,6 +110,17 @@ class StoresCollection:
                                         else getattr(x, sort_key)),
                          reverse=reverse)
 
+    def filter(self, filter_rule):
+        """
+        Filter apply
+
+        Args:
+            filter_rule: Apply filter rule directly to current store list
+
+        """
+
+        self.stores = list(filter(filter_rule, self.stores))
+
     def import_json(self, json_data: str, overwrite: bool = False):
         """
         Sort stores list

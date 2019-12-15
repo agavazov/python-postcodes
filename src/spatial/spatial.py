@@ -54,4 +54,9 @@ def in_radius(radius: float, center_lon: float, center_lat: float, point_lon: fl
 
     """
 
+    # Check for null coordinates
+    if point_lon is None or point_lat is None:
+        return False
+
+    # Distance check
     return points_distance(center_lon, center_lat, point_lon, point_lat) <= radius

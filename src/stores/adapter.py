@@ -6,7 +6,7 @@ from . import StoresCollection
 from .errors import *
 
 
-def lon_lat_loader(collection: StoresCollection, raise_error_on_missing_postcode: bool = False):
+def geo_collection_loader(collection: StoresCollection, raise_error_on_missing_postcode: bool = False):
     """
     Set lot & lat for each store
 
@@ -43,26 +43,26 @@ def lon_lat_loader(collection: StoresCollection, raise_error_on_missing_postcode
             continue
 
         # Check the response code
-        if postcodes_data['status'] is not 200:
+        if postcodes_data["status"] is not 200:
             continue
 
         # Check is there any
-        if not isinstance(postcodes_data['result'], list):
+        if not isinstance(postcodes_data["result"], list):
             continue
 
         # Map the results
-        for row in postcodes_data['result']:
+        for row in postcodes_data["result"]:
             # Check is any data for the specific postcode
-            if row['result'] is None:
+            if row["result"] is None:
                 if raise_error_on_missing_postcode:
-                    raise ApiNoPostCodeResult("No data for " + row['query'])
+                    raise ApiNoPostCodeResult("No data for " + row["query"])
                 else:
                     continue
 
             # Get the needed data
-            postcode = row['result']['postcode']
-            lon = row['result']['longitude']
-            lat = row['result']['latitude']
+            postcode = row["result"]["postcode"]
+            lon = row["result"]["longitude"]
+            lat = row["result"]["latitude"]
 
             # Loop the stores and set the coordinates
             for index, store in enumerate(collection.stores):
@@ -83,13 +83,13 @@ def bulk_coordinates_download(postcodes: [str]) -> [object]:
 
     api_url = "https://api.postcodes.io/postcodes"
 
-    params = {'postcodes[]': postcodes}
+    params = {"postcodes[]": postcodes}
 
     # Build url encoded data
     data = urlencode(params, True)
 
     # Convert string to byte
-    data = data.encode('utf-8')
+    data = data.encode("utf-8")
 
     # Prepare the request
     req = request.Request(api_url, data=data)
@@ -105,6 +105,29 @@ def bulk_coordinates_download(postcodes: [str]) -> [object]:
         return json.loads(resp.read())
     except JSONDecodeError:
         return []
+
+
+def postcode_coordinates(postcode: str) -> [object]:
+    """
+    Get location for single postcode
+
+    Args:
+        postcode: Postcode value
+
+    """
+
+    # Get it as bulk request
+    postcodes_data = bulk_coordinates_download([postcode])
+
+    # Check response object
+    if isinstance(postcodes_data, dict) and \
+            postcodes_data["status"] == 200 and \
+            isinstance(postcodes_data["result"], list) and \
+            postcodes_data["result"][0]["result"] is not None:
+        return {
+            "lon": postcodes_data["result"][0]["result"]["longitude"],
+            "lat": postcodes_data["result"][0]["result"]["latitude"]
+        }
 
 
 def chunks(elements, chunk_size) -> []:
