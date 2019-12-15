@@ -15,7 +15,7 @@ class Store:
         Create new store record.
 
         Args:
-            postcode (str): Postcode identification
+            postcode (str): Postcode identification (it can be international)
             name (str): Simple information about the postcode (like place name)
             lon (float, optional): Longitude of the postcode in WGS84
             lat (float, optional): Latitude of the postcode in WGS84
@@ -31,33 +31,34 @@ class Store:
     @property
     def postcode(self) -> str:
         """
-        "code" getter
+        "postcode" getter
         """
 
-        return self._code
+        return self._postcode
 
     @postcode.setter
-    def postcode(self, code: str):
+    def postcode(self, postcode: str):
         """
-        "code" setter
+        "postcode" setter
 
         The postcode can be international so the minimal requirement is to be
-        at least 1 character length
+        at least 1 character length. If you want to use
+        UK postcode only: https://pypi.org/project/uk-postcode-utils/
 
         Args:
-            code (str): Postcode identification
+            postcode (str): Postcode identification
 
         """
 
-        # Validation the type of the code
-        if not isinstance(code, str):
+        # Validation the type of the postcode
+        if not isinstance(postcode, str):
             raise StoreInvalidDefinitionError("code value must be a string type")
 
         # Validation of the length
-        if len(code) < 1:
+        if len(postcode) < 1:
             raise StoreInvalidDefinitionError("code must be at leas 1 character")
 
-        self._code = code
+        self._postcode = postcode
 
     @property
     def name(self) -> str:
