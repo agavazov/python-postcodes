@@ -21,6 +21,7 @@
             crossorigin="anonymous"></script>
 
     <script src="/example1.js"></script>
+    <script src="/example2.js"></script>
 
     <script>
         mapboxgl.accessToken = "pk.eyJ1IjoiYWdhdmF6b3YiLCJhIjoiY2s0NWk3ampmMDN2cTNrbXQ2MHJvajJhdSJ9.H1HaRtJVzBqPgehTTvHijA";
@@ -35,13 +36,45 @@
         </div>
         <div class="card-body">
             <div class="form-group">
-                <label for="example1Postcodes">Postcodes separated with <strong class="badge badge-primary">;</strong></label>
-                <textarea id="example1Postcodes" class="form-control" rows="4">EC4A 2AG; INVALID; EC4M 7AW; XXX XXX; EC3M 3AJ; EC4V 3DS; EC4P 4GU; EC4V 5AQ; EC3N 2AB; EC1R 4TW; EC1M 5UY; EC1R 1XA; EC1V 9GR; EC3N 1NT; EC2A 1YP; EC2R 7HD; EC1R 4RE; EC2M 4AA; EC1R 3BH; EC4N 8AD; EC4N 8AA; EC2A 3AN; EC1M 4BL; EC4N 1SR; EC1A 2DE; EC1V 3NY; EC1M 5UT; EC2A 4PP; EC3R 5BT</textarea>
+                <label for="example1Postcodes">Postcodes separated with <strong
+                        class="badge badge-primary">;</strong></label>
+                <textarea id="example1Postcodes" class="form-control" rows="3">EC4A 2AG; INVALID; EC4M 7AW; XXX XXX; EC3M 3AJ; EC4V 3DS; EC4P 4GU; EC4V 5AQ; EC3N 2AB; EC1R 4TW; EC1M 5UY; EC1R 1XA; EC1V 9GR; EC3N 1NT; EC2A 1YP; EC2R 7HD; EC1R 4RE; EC2M 4AA; EC1R 3BH; EC4N 8AD; EC4N 8AA; EC2A 3AN; EC1M 4BL; EC4N 1SR; EC1A 2DE; EC1V 3NY; EC1M 5UT; EC2A 4PP; EC3R 5BT</textarea>
             </div>
 
-            <button class="btn btn-primary btn-block mb-3" onclick="example1.run();">Show the results on the map</button>
+            <button class="btn btn-primary btn-block mb-3" onclick="example1.run();">Show the results on the map
+            </button>
 
             <div id="example1Map" style="height: 400px;"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <strong>Example: <kbd>src.spatial.in_radius (filter)</kbd></strong>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="example2Postcodes">Postcodes separated with <strong
+                        class="badge badge-primary">;</strong></label>
+                <textarea id="example2Postcodes" class="form-control" rows="3">EC4A 2AG; INVALID; EC4M 7AW; XXX XXX; EC3M 3AJ; EC4V 3DS; EC4P 4GU; EC4V 5AQ; EC3N 2AB; EC1R 4TW; EC1M 5UY; EC1R 1XA; EC1V 9GR; EC3N 1NT; EC2A 1YP; EC2R 7HD; EC1R 4RE; EC2M 4AA; EC1R 3BH; EC4N 8AD; EC4N 8AA; EC2A 3AN; EC1M 4BL; EC4N 1SR; EC1A 2DE; EC1V 3NY; EC1M 5UT; EC2A 4PP; EC3R 5BT; GW97 5C</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="example2RadiusPostcode">Radius Postcode</label>
+                <input type="text" id="example2RadiusPostcode" class="form-control" value="EC1M 4BL"/>
+            </div>
+
+            <div class="form-group">
+                <label for="example2RadiusRange">Radius Range (in KM)</label>
+                <input type="number" min="1" step="1" id="example2RadiusRange" class="form-control" value="2"/>
+            </div>
+
+            <button class="btn btn-primary btn-block mb-3" onclick="example2.run();">Show the results on the map
+            </button>
+
+            <div id="example2Map" style="height: 400px;"></div>
         </div>
     </div>
 </div>
